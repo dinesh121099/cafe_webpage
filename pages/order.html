@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title> Order</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#cartplace">
+                <figure>
+                <img class="Cart" src="../images/icons/cart.png" alt="To cart">
+                <span id="cart-count">0</span>
+                </figure>
+            </a>
+            <nav>
+                <ul class=opti>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="order.html">Products</a></li>
+                </ul>
+            </nav>
+            <h1>Products</h1>
+        </header>
+        <section class="items">
+            <div class="bread">
+                <figure>
+                    <img src="../images/order/bread1.jpg" alt="sourdough bread">
+                    <figcaption>sourdough bread</figcaption>
+		            <button class="cartcount" onclick="addtocart(1,'sourdough bread','../images/order/bread1.jpg',80)" >Add to cart</button>
+                </figure>
+                <figure>
+                    <img src="../images/order/bread2.jpg" alt="wheat bread">
+                    <figcaption>wheat bread</figcaption>
+		            <button class="cartcount" onclick="addtocart(2,'wheat bread','../images/order/bread2.jpg',60)" >Add to cart</button>
+                </figure>
+                <figure>
+                    <img src="../images/order/bread3.jpg" alt="pao bread">
+                    <figcaption>pao bread</figcaption>
+		            <button class="cartcount" onclick="addtocart(3,'pao bread','../images/order/bread3.jpg',100)" >Add to cart</button>
+                </figure>
+            </div>
+            <div class="cup">
+                <figure>
+                    <img src="../images/order/cup1.jpg" alt="valentine cupcakes">
+                    <figcaption>valentine cupcakes</figcaption>
+		            <button class="cartcount" onclick="addtocart(4,'valentine cupcake','../images/order/cup1.jpg',80)" >Add to cart</button>
+                </figure>
+                <figure>
+                    <img src="../images/order/cup2.jpg" alt="single cupcake">
+                    <figcaption>single's cupcake</figcaption>
+		            <button class="cartcount" onclick="addtocart(5,'single\'s cupcake','../images/order/cup2.jpg',40)" >Add to cart</button>
+                </figure>
+                <figure>
+                    <img src="../images/order/cup3.jpg" alt="rainbow cupcakes">
+                    <figcaption>rainbow cupcakes</figcaption>
+		            <button class="cartcount" onclick="addtocart(6,'rainbow cupcake','../images/order/cup3.jpg',60)"  >Add to cart</button>
+                </figure>
+            </div>
+            <div class="cookie">
+                <figure>
+                    <img src="../images/order/cookie1.jpg" alt="3 Nos cookies">
+                    <figcaption>3 Nos cookies</figcaption>
+		            <button class="cartcount" onclick="addtocart(7,'3 Nos cookies','../images/order/cookie1.jpg',60)" >Add to cart</button>
+                </figure>
+                <figure>
+                    <img src="../images/order/cookie2.jpg" alt="Assorted cookie box">
+                    <figcaption>Assorted cookie box</figcaption>
+		            <button class="cartcount" onclick="addtocart(8,'Assorted cookie box','../images/order/cookie2.jpg',250)" >Add to cart</button>
+                </figure>
+                <figure>
+                    <img src="../images/order/cookie3.jpg" alt="chocochip cookies">
+                    <figcaption>chocochip cookies</figcaption>
+		            <button class="cartcount" onclick="addtocart(9,'chocochip cookies','../images/order/cookie1.jpg',40)" >Add to cart</button>
+                </figure>
+            </div>
+            <div class="cake">
+                <figure>
+                    <img src="../images/order/cake1.jpg" alt="Chocolate truffle cake">
+                    <figcaption>Chocolate Truffle Cake</figcaption>
+		            <button class="cartcount" onclick="addtocart(10,'Chocolate Truffle cake','../images/order/cake1.jpg',400)" >Add to cart</button>
+                </figure>
+                <figure>
+                    <img src="../images/order/cake2.jpg" alt="Strawberry Slice cake">
+                    <figcaption>Strawberry Slice Cake</figcaption>
+		            <button class="cartcount" onclick="addtocart(11,'Strawberry Slice Cake','../images/order/cake2.jpg',65)" >Add to cart</button>
+                </figure>
+                <figure>
+                    <img src="../images/order/cake3.jpg" alt="Chocolate Mousse cake">
+                    <figcaption>Chocolate Mousse Cake</figcaption>
+		            <button class="cartcount" onclick="addtocart(12,'Chocolate Mousse Cake','../images/order/cake3.jpg',350)" >Add to cart</button>
+                </figure>
+            </div>
+            <div class="splcakes">
+                <figure>
+                    <img src="../images/order/w_cake.jpg" alt="Special cakes for parties and wedding">
+                    <figcaption><strong>Party & Wedding cakes</strong><br>Describe us your idea and we ll' craft it for you </figcaption>
+		            <button id="mail2me"><a href="mailto:dinesh121099@gmail.com">Place an order</a></button>
+                </figure>
+            </div>
+            <br>
+            
+            <h2 id="cartplace">Your Cart</h2>
+            <div id="cart-items"></div>
+            <div id="total-price">Total Price: Rs. 0.0</div>
+            <button>Pay Now</button>
+            <br>
+            <br>
+        </section>
+        <footer>Customer Satisfaction Is Our Moto</footer>
+        <script src="../main.js"></script>
+    </body>
+</html>
